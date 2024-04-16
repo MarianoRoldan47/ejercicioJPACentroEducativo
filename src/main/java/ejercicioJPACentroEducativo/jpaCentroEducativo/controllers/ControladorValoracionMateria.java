@@ -2,14 +2,13 @@ package ejercicioJPACentroEducativo.jpaCentroEducativo.controllers;
 
 import java.util.List;
 
-import ejercicioJPACentroEducativo.jpaCentroEducativo.model.Profesor;
 import ejercicioJPACentroEducativo.jpaCentroEducativo.model.ValoracionMateria;
 
 public class ControladorValoracionMateria extends SuperControlador{
 private static ControladorValoracionMateria instance = null;
 	
 	public ControladorValoracionMateria() {
-		super("profesor", Profesor.class);
+		super("valoracionmateria", ValoracionMateria.class);
 	}
 	
 	public static ControladorValoracionMateria getInstance() {

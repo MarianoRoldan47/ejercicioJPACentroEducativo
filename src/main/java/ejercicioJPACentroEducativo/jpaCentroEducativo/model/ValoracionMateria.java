@@ -1,5 +1,7 @@
 package ejercicioJPACentroEducativo.jpaCentroEducativo.model;
 
+import java.util.Date;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -22,6 +24,7 @@ public class ValoracionMateria extends Entidad{
 	private Estudiante idEstudiante;
 	private int idMateria;
 	private float valoracion;
+	private Date fecha;
 	
 	public ValoracionMateria() {
 		super();
@@ -75,6 +78,16 @@ public class ValoracionMateria extends Entidad{
 	public void setValoracion(float valoracion) {
 		this.valoracion = valoracion;
 	}
+
+	public Date getFecha() {
+		return fecha;
+	}
+
+	public void setFecha(Date fecha) {
+		this.fecha = fecha;
+	}
+	
+	
 	
 	
 }
